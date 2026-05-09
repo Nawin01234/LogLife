@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Prompt:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Modern Coastal Sky Palette */
+  --primary: #0ea5e9;
+  --primary-dark: #0369a1;
+  --primary-light: #e0f2fe;
+  --secondary: #14b8a6;
+  --accent: #f97316;
+  --danger: #ef4444;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --bg-dark: #0f172a;
+  --bg-light: #f0f9ff;
+  --bg-lighter: #e0f2fe;
+  --text-dark: #0f172a;
+  --text-muted: #475569;
+  --text-light: #94a3b8;
+  --border: #cbd5e1;
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  font-family: 'Prompt', 'Poppins', system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(135deg, #f0f9ff 0%, #ecfdf5 50%, #f0fdfa 100%);
+  color: var(--text-dark);
+  min-height: 100vh;
+}
+
+.btn-primary {
+  @apply px-6 py-2 bg-gradient-to-r from-sky-500 to-cyan-500 text-white font-semibold rounded-xl hover:from-sky-600 hover:to-cyan-600 transition-all duration-300 shadow-lg hover:shadow-xl active:scale-95;
+}
+
+.btn-secondary {
+  @apply px-6 py-2 bg-white text-sky-600 font-semibold rounded-lg border-2 border-sky-200 hover:border-sky-400 hover:bg-sky-50 transition-all duration-200;
+}
+
+.card {
+  @apply bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 p-6 border border-sky-100;
+}
+
+.input-field {
+  @apply w-full px-4 py-3 rounded-lg border-2 border-sky-200 focus:border-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-100 transition-all duration-200 font-medium bg-sky-50 focus:bg-white;
+}
+
+.badge {
+  @apply inline-block px-3 py-1 rounded-full text-sm font-semibold;
+}
+
